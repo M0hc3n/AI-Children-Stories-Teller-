@@ -1,0 +1,1 @@
+export const llamaApiRoute = "https://api.replicate.com/v1/models/meta/meta-llama-3-70b-instruct/predictions"

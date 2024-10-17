@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-slide > :first-child {
+    margin: 0 auto;
+}
+
+@keyframes zoom-out-animation {
+    0% {
+        transform: scale(0.8,0.8);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.animated-img {
+	animation: zoom-out-animation 45s ease ;
+}
