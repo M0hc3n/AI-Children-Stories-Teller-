@@ -2,13 +2,15 @@
 
 import { IImageAndSequence } from "@/api/interfaces";
 import { Button, Image } from "@nextui-org/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Typewriter from "typewriter-effect";
 
 import { useSwiper, useSwiperSlide } from "swiper/react";
 import Next from "../icons/Next";
 import { useRouter } from "next/navigation";
+
+import { useSpeechSynthesis } from "react-speech-kit";
 
 const TheaterSequence = ({ seqimg }: { seqimg: IImageAndSequence }) => {
   const router = useRouter();
